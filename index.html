@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила BG ПК-клуба</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Arial Black', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f23, #1a1a2e, #16213e);
+            color: #00ff88;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-shadow: 0 0 10px #00ff88;
+        }
+        .container {
+            max-width: 900px;
+            padding: 40px;
+            background: rgba(0,0,0,0.7);
+            border: 2px solid #00ff88;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px #00ff88;
+        }
+        h1 { 
+            font-size: 2.5em; 
+            margin-bottom: 20px; 
+            color: #ff6b9d;
+            text-shadow: 0 0 15px #ff6b9d;
+        }
+        p, ul { 
+            font-size: 1.3em; 
+            line-height: 1.6; 
+            text-align: left;
+            margin: 15px 0;
+        }
+        li { margin: 10px 0; }
+        button {
+            background: linear-gradient(45deg, #ff6b9d, #00ff88);
+            color: black;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.8em;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(255,107,157,0.5);
+        }
+        button:hover { 
+            transform: scale(1.1); 
+            box-shadow: 0 0 40px #00ff88;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Йо, геймеры! BG — правила чилл-гейминга 🤝</h1>
+        <p>BG — это про чилл-гейминг и уважение друг друга. Держим кайфовый вайбик, по рукам?</p>
+        <p><strong>Кто не в теме:</strong></p>
+        <ul>
+            <li>Орать на зал "эй, я дядя твоей мамы!" — нельзя, не пугай народ. 😂</li>
+            <li>Алко/нарко — мимо, чистый кайф only.</li>
+            <li>Мусор за собой? Убери, бро! Порядок — наша фишка, стартуй с себя. 🗑️</li>
+            <li>Болтаться >10 мин без запуска сессии запрещено — заходи по делу, не оккупируй место.</li>
+            <li>Казино-рулетки — не наш профиль, крути в другом месте.</li>
+            <li>Токсик на админов/игроков — фулл стоп, здесь все друзья. ❤️</li>
+        </ul>
+        <p><strong>Го в плюс:</strong></p>
+        <ul>
+            <li>Соблюдать правила — это легко и просто.</li>
+            <li>Качать лайтовую атмосферу: смех, музыка, релакс.</li>
+        </ul>
+        <p><strong>Если косяк случился:</strong> Админы в праве карать санкциями: ребут ПК (даже в катке), бан forever или обнуление баланса. Не рискуй!</p>
+        <p>Помог в соблюдении порядка на территории заведения? Ты красавчик — респект и бонусы тебя ждут! 🏆</p>
+        <p><strong>Незнание правил не освобождает от ответственности. GLHF 🤝</strong></p>
+        <button onclick="acceptRules()">Я согласен! GLHF 🚀</button>
+    </div>
+
+    <script>
+        function acceptRules() {
+            // Пытаемся закрыть окно (работает, если открыто window.open() из ПК-клуба)
+            if (window.close) {
+                window.close();
+                return;
+            }
+            // Fallback: редирект на пустую страницу (можно заменить на запуск игры)
+            window.location.href = 'about:blank';
+        }
+    </script>
+</body>
+</html>
